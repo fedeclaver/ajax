@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign up Form</title>
+    <script src="https://kit.fontawesome.com/378cd465c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup"> <!-- Preciso que esse container seja um grid com 1 coluna -->
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Login usuario</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" class="valid" id ="usuario" placeholder="Usuario">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="valid" id ="password" placeholder="Password">
+                    </div>
+                    <input type="submit" id= "Login" value="Login" class="btn solid">
+                </form>
+
+                <form action="#" id="sign-up-form" class="sign-up-form">
+                    <h2 class="title">Registrar usuario</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id= "user" placeholder="Usuario">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text"  id="mail" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password"  id="pass" placeholder="Password">
+                    </div>
+                    <input type="submit" id="Registrar" value="Registrar" class="btn solid">
+               
+                   
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Bienvenido</h3>
+                    <p>Si eres nuevo Crear cuenta aqui.</p>
+                    <input type="submit" class="btn transparent sign-up-btn" value="Registrar"></input>
+                </div>
+
+                <img src="./img/login.svg" class="image" alt="">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Que gusto verte de nuevo</h3>
+                    <p>Iniciar sesión</p>
+                    <input type="submit" class="btn transparent sign-in-btn" value="Loguin"></input>
+                </div>
+
+                <img src="./img/register.svg" class="image" alt="">
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/dataLocal.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="./js/login.js"></script>
+    
+</body>
+</html>

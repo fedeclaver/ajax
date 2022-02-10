@@ -1,0 +1,27 @@
+
+.bg-azul {
+    background-color: #0e153a;
+  }
+  
+  .c-azul {
+    color: #0e153a;
+  }
+  
+  .bg-violeta {
+    background-color: #8011f2;
+  }
+  
+  .c-violeta {
+    color: #8011f2;
+  }
+  
+  .c-blanco {
+    color: white;
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+  }
+  
+  @media (min-width: 992px) and (max-width: 1080px) {
+  }
+  

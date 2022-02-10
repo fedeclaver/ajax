@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Simulacion Bancaria</title>
+
+</head>
+
+<body>
+    <!-- HEADER NAVBAR --------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="../img/logo.png" alt="" class="w-75"></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/prestamo.html">Prestamo</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuerpo de la web ---------------------------------------------------------------->
+    <main class="container">
+
+        <!--  Portada  ------------------------------------------------------------------>
+
+        <section class="row">
+
+ 
+
+               
+                    <div class="col-12 col-sm-11 col-md-4 m-auto p-5">
+                        <div class="card card--prestamo m-auto">
+                            <div class="card-header">
+                                <h2 class="titulo-home m-auto">Solicitud</h2>
+                            </div>
+                            <div class="card-body mt-3">
+                                <form id="creditForm">
+                                    <div class="input-group">                                   
+                                        <input id="monto" type="number" name="monto" class="form-control"
+                                            placeholder="Monto a solicitar">
+                                        <small class="col-12 mt-1">
+                                            <p></p>
+                                        </small>
+                                    </div>
+                                    <div class="input-group">                                   
+                                        <input id="plazo" type="number" name="plazo" class="form-control"
+                                            placeholder="Número de cuotas">
+                                        <small class="col-12 mt-1">
+                                            <p></p>
+                                        </small>
+                                    </div>
+                                    <div class="d-flex justify-content-end pt-4 gap-3">
+    
+                                        <button type="submit" class="btn btn-primary">Calcular</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+       
+            <div id= "tabla"></div>
+
+        </section>
+
+       
+
+    </main>
+
+    <!-- FOOTER ------------------------------------------------>
+    <footer class="container-fluid bg-azul">
+
+        <div class="container p-5">
+
+            <div class="row c-blanco border-bottom">
+
+                <div class="col-12 col-lg-2">
+                    <img src="../img/logo.png" alt="" class="col-12 w-25 my-3">
+
+                    
+
+                  
+                </div>
+
+
+            </div>
+
+            <p class="text-center m-0 c-blanco"> </p>
+
+        </div>
+
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.js"></script> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/validaciones.js"></script>
+        <script src="../js/dataLocal.js"></script>
+    <script src="../js/prestamo.js"></script>
+</body>
+
+</html>
+
+
