@@ -60,7 +60,7 @@ class Prestamo {
 }
 
 
- const creditForm = document.querySelector('#creditForm'),
+ const cotizar = document.querySelector('#cotizar'),
  inputMonto = document.getElementById('monto'),
  inputPlazo= document.getElementById('plazo');
 
