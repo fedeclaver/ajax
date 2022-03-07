@@ -14,26 +14,38 @@
 
 <body>
     <!-- HEADER NAVBAR --------------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <img src="../img/logo.png" alt="" class="w-75"></a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="#"> <img src="../img/logo.png" alt="" id="logo" class="w-75"></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav justify-content-end w-100">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/prestamo.html">Prestamo</a>
-                    </li>
-                    
-                </ul>
-            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex align-items-center justify-content-end w-100">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/pages/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/pages/prestamo.html">Prestamo</a>
+
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/exchange.html">Exchange</a>
+                </li>
+                <li class="nav-link dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#"
+                        role="button" aria-expanded="false"><span>Mi cuenta</span></a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start">
+                        <li><a class="dropdown-item" id="cargarDatos" href="#">Mis datos</a></li>
+                        <li><a class="dropdown-item" id="cerrarSesion" href="../index.html">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Cuerpo de la web ---------------------------------------------------------------->
     <main class="container">

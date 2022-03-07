@@ -1,6 +1,6 @@
 
 
-
+//
 
 const multiplicar = (a,b) => a * b ;  
 const suma = (a,b) => a + b ;  
@@ -70,8 +70,8 @@ class Prestamo {
     let formData = new FormData(creditForm);
     const monto = formData.get('monto');
     const plazo = formData.get('plazo');
-    if (cantidadCuotas(plazo) == true){
-      if (montoSolicitado(monto)==true){
+    if (ingresarCuotas(plazo) == true){
+      if (solicitarMonto(monto)==true){
     const prestamo = new Prestamo(monto, plazo,'simulacion');
     let total=prestamo.total();
     let int=prestamo.buscarInteres();
